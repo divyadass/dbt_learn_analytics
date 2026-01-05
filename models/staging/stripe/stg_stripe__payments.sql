@@ -1,6 +1,7 @@
 select
     orderid as order_id,
     id as customer_id,
-    amount
+    `status` as payment_status,
+    amount / 100 as amount  -- cents to dollar
 
-from dbt-tutorial.stripe.payments
+from dbt-tutorial.stripe.payment

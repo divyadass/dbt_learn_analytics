@@ -1,0 +1,5 @@
+with payment as (
+    select * from {{ ref('stg_stripe__payments') }}
+)
+
+select * from payment
