@@ -41,6 +41,8 @@ models:
     staging:
       jaffle_shop:
         +materialized: view
+      stripe:
+        +materialized: view
     # Applies to all files under models/marts/
     marts:
       +materialized: table
